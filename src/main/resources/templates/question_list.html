@@ -1,13 +1,5 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <title>list</title>
-
-</head>
-<body>
-    <link rel="stylesheet" type="text/css" th:href="@{/bootstrap.min.css}">
-    <div class="container my-3">
+<html layout:decorate="~{layout}">
+    <div layout:fragment="content" class="container my-3">
         <table class="table">
             <thead class="table-dark">
             <tr>
@@ -26,7 +18,7 @@
             </tr>
             </tbody>
         </table>
-    </div>
 
-</body>
+        <a th:href="@{/question/create}" class="btn btn-primary">질문 등록하기</a>
+    </div>
 </html>
